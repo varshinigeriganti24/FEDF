@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare EMR Portal</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-blue-700">
+        Medi<span class="text-cyan-500">Care</span>
+      </h1>
+
+      <nav class="hidden md:flex gap-8 font-medium text-gray-700">
+        <a href="#home" class="hover:text-blue-600 transition">Home</a>
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="#features" class="hover:text-blue-600 transition">Features</a>
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen bg-gradient-to-r from-blue-700 to-cyan-500 text-white flex items-center pt-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          Smart Healthcare Digital Solutions
+        </h2>
+
+        <p class="text-lg text-blue-100 leading-relaxed mb-8">
+          Improve patient care and streamline healthcare operations with our
+          advanced Patient Registration System and Electronic Medical Record (EMR) Portal.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <button class="bg-white text-blue-700 px-7 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Get Started
+          </button>
+
+          <button class="border border-white px-7 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Patient Registration Section -->
+      <div class="bg-white text-gray-800 rounded-3xl shadow-2xl p-8">
+        <h3 class="text-3xl font-bold text-blue-700 mb-6 text-center">
+          Patient Registration
+        </h3>
+
+        <form class="space-y-5">
+          <input type="text" placeholder="Full Name"
+            class="w-full border border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none">
+
+          <input type="email" placeholder="Email Address"
+            class="w-full border border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none">
+
+          <input type="tel" placeholder="Phone Number"
+            class="w-full border border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none">
+
+          <input type="date"
+            class="w-full border border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none">
+
+          <button class="w-full bg-gradient-to-r from-blue-700 to-cyan-500 text-white py-4 rounded-xl font-semibold hover:opacity-90 transition">
+            Register Patient
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-blue-700 mb-4">
+          Services & Features
+        </h2>
+
+        <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          Comprehensive healthcare technology solutions designed to improve
+          patient experience, healthcare efficiency, and medical data security.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gray-50 p-8 rounded-3xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-5xl mb-5">🏥</div>
+          <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+            Patient Registration
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Simplify patient onboarding with digital registration and centralized patient information.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-3xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-5xl mb-5">📋</div>
+          <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+            EMR Portal
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Securely manage medical records, prescriptions, diagnoses, and patient history digitally.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-3xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-5xl mb-5">💻</div>
+          <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+            Telemedicine Support
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Enable virtual consultations and remote healthcare services for patients.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EMR Portal Section -->
+  <section id="features" class="py-24 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+          alt="Healthcare"
+          class="rounded-3xl shadow-2xl"
+        >
+      </div>
+
+      <div>
+        <h2 class="text-5xl font-bold text-blue-700 mb-6">
+          Electronic Medical Record (EMR) Portal
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+          The EMR portal is a centralized digital platform that stores and manages
+          patients’ medical records in real time. It improves healthcare workflows,
+          reduces paperwork, and enhances patient safety.
+        </p>
+
+        <div class="space-y-5">
+          <div class="bg-white p-5 rounded-2xl shadow-md">
+            <h4 class="font-semibold text-xl text-blue-700 mb-2">Real-Time Data Access</h4>
+            <p class="text-gray-600">Access patient medical history instantly and securely.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow-md">
+            <h4 class="font-semibold text-xl text-blue-700 mb-2">Secure Data Management</h4>
+            <p class="text-gray-600">Maintain privacy with encrypted and compliant healthcare systems.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow-md">
+            <h4 class="font-semibold text-xl text-blue-700 mb-2">Healthcare Analytics</h4>
+            <p class="text-gray-600">Support population health management and medical insights.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold text-blue-700 mb-6">
+        About Our Healthcare Platform
+      </h2>
+
+      <p class="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
+        Our healthcare platform integrates Patient Registration Systems and EMR portals
+        to improve the quality, accessibility, and efficiency of healthcare services.
+        These digital healthcare solutions reduce paperwork, enhance patient safety,
+        support telemedicine, and ensure better healthcare management.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+        <div class="bg-blue-50 p-8 rounded-3xl shadow-md">
+          <h3 class="text-4xl font-bold text-blue-700 mb-2">99%</h3>
+          <p class="text-gray-600">Data Accuracy</p>
+        </div>
+
+        <div class="bg-blue-50 p-8 rounded-3xl shadow-md">
+          <h3 class="text-4xl font-bold text-blue-700 mb-2">24/7</h3>
+          <p class="text-gray-600">Healthcare Access</p>
+        </div>
+
+        <div class="bg-blue-50 p-8 rounded-3xl shadow-md">
+          <h3 class="text-4xl font-bold text-blue-700 mb-2">50K+</h3>
+          <p class="text-gray-600">Patients Registered</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold mb-6">
+        Contact Our Healthcare Team
+      </h2>
+
+      <p class="text-blue-100 text-lg mb-12 leading-relaxed">
+        Reach out to us for healthcare solutions, EMR services, and patient registration support.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <h3 class="text-2xl font-semibold mb-3">📍 Address</h3>
+          <p>Healthcare Innovation Center</p>
+          <p>Andhra Pradesh, India</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <h3 class="text-2xl font-semibold mb-3">📞 Phone</h3>
+          <p>+91 98765 43210</p>
+          <p>+91 91234 56789</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <h3 class="text-2xl font-semibold mb-3">📧 Email</h3>
+          <p>support@medicareemr.com</p>
+          <p>info@medicareemr.com</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2026 MediCare EMR Portal | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
